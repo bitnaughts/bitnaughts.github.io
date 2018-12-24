@@ -27,8 +27,8 @@
 			}
 			new Typed('#loader', {
 
-				strings: ['^10\n`Initializing connection...`^1000\n`Fetching from server...`^1400\n`Decrypting packets...`^200\n`Enter passkey: `^1000*^150**^100**^150**^100*^600\n`Populating content...`^400\n`Welcome, USER. Log(time: ' + new Date().today() + " @ " + new Date().timeNow() + ', planet: earth)`^100\n``^400\n'],
-				typeSpeed: 50,
+				strings: ['^1\n^1\n`Initializing connection...`^1000\n`Fetching from server...`^1400\n`Decrypting packets...`^200\n`Enter passkey: `^1000*^150**^100**^150**^100*^600\n`Populating content...`^400\n`Welcome, USER.`^100\n`Log(' + new Date().today() + " @ " + new Date().timeNow() + ', Earth)`^100\n``^400\n'],
+				typeSpeed: 35,
 				backSpeed: 0,
 				showCursor: true,
 				loop: false
@@ -44,14 +44,15 @@
 
 		<!-- Intro -->
 		<div id="intro">
-			<h1>BitNaughts</h1>
-			<p>
-				<pre>
-					<code style = "height:21em">
-						<span id="loader" style="white-space:pre;"></span>
-					</code>
-				</pre>
-			</p>
+			<!-- <h1>BitNaughts</h1> -->
+			<pre>
+				<div style="position:absolute">
+						<h2>BitNaughts</h2>
+				</div>
+				<code style = "height:24em; text-align: left;">
+					<span id="loader"></span>
+				</code>
+			</pre>
 			<ul class="actions">
 				<li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
 			</ul>
