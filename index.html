@@ -14,6 +14,7 @@
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	<script src="assets/js/typed.min.js" type="text/javascript"></script>
+	<script src="assets/js/particles.js"></script>
 	<script>
 		document.addEventListener('DOMContentLoaded', function () {
 			// new Typed('#title', {
@@ -23,8 +24,17 @@
 			// 	showCursor: true,
 			// 	loop: false
 			// });
+			Date.prototype.today = function () {
+				return ((this.getDate() < 10) ? "0" : "") + this.getDate() + "/" + (((this.getMonth() + 1) < 10) ? "0" : "") + (this.getMonth() + 1) + "/" + (this.getFullYear() + 1000);
+			}
+
+			// For the time now
+			Date.prototype.timeNow = function () {
+				return ((this.getHours() < 10) ? "0" : "") + this.getHours() + ":" + ((this.getMinutes() < 10) ? "0" : "") + this.getMinutes() + ":" + ((this.getSeconds() < 10) ? "0" : "") + this.getSeconds();
+			}
 			new Typed('#loader', {
-				strings: ['^10\n`Initializing connection...`^1000\n`Fetching from server...`^700\n`Decrypting packets...`^200\n`Enter Passkey: `^100***^50**^80**^50*^600\n`Populating content...`^100\n``^100\n'],
+
+				strings: ['^10\n`Initializing connection...`^1000\n`Fetching from server...`^1400\n`Decrypting packets...`^200\n`Enter passkey: `^1000*^150**^100**^150**^100*^600\n`Populating content...`^400\n`Welcome, USER. Log(time: ' + new Date().today() + " @ " + new Date().timeNow() + ', planet: earth)`^100\n``^400\n'],
 				typeSpeed: 50,
 				backSpeed: 0,
 				showCursor: true,
@@ -47,6 +57,7 @@
 
 		<!-- Header -->
 		<header id="header" class="alt">
+
 			<a href="index.html"><strong>BitNaughts</strong> <span></span></a>
 			<nav>
 				<a href="#menu">Menu</a>
@@ -69,6 +80,8 @@
 
 		<!-- Banner -->
 		<section id="banner" class="major">
+			<div style="width:100%; height:100%; z-index:0; position: absolute; top:0px; left:0px" id="particles-js"></div>
+
 			<div class="inner">
 				<header class="major">
 					<!-- <span id="title"></span> -->
@@ -76,15 +89,15 @@
 				</header>
 				<div class="content">
 					<pre>
-						<code style = "height:20em">
+						<code style = "height:21em">
 								<span id="loader" style="white-space:pre;"></span>
 
 						</code>
 					</pre>
 
-					<p>A Distributed AI Sci-fi Coding MMO.</p>
+					<!-- <p>A Distributed AI Sci-fi Coding MMO.</p> -->
 					<ul class="actions">
-						<li><a href="#one" class="button next scrolly">See More</a></li>
+						<li><a href="#one" class="button scrolly">Open()</a></li>
 					</ul>
 				</div>
 			</div>
