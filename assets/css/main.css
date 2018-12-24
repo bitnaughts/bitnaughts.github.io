@@ -249,7 +249,10 @@ input, select, textarea {
 		margin: 0 0 2rem 0;
 		padding: 0.5rem 0 0.5rem 2rem;
 	}
-
+	.dud
+	{
+		color: #757575;
+	}
 	code {
 		border: solid 2px;
 		font-family: "Courier New", monospace;
