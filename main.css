@@ -1,3 +1,13 @@
+@import url(font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
+@font-face {
+	font-family: 'Conv_abstract_slab';
+	src: url('./assets/fonts/abstract_slab.eot');
+	src: local('☺'), url('./assets/fonts/abstract_slab.woff') format('woff'), url('./assets/fonts/abstract_slab.ttf') format('truetype'), url('./assets/fonts/abstract_slab.svg') format('svg');	
+	font-weight: normal;
+	font-style: normal;
+}
+
 ::selection {
   background: #FF5E99;
 }
@@ -7,8 +17,8 @@ html, body {
   margin: 0;
 }
 body {
-  font-size: 11pt;
-  font-family: Inconsolata, monospace;
+  font-size: 15pt;
+  font-family: 'Conv_abstract_slab', sans-serif;
   color: white;
   background-color: black;
 }
