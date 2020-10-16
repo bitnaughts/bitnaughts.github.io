@@ -10,8 +10,10 @@
     <script src="Build/UnityLoader.js"></script>
     <script>
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/bitnaughts.github.io.json", {onProgress: UnityProgress});
-      document.getElementById('gameContainer').style.width = (window.screen.width * window.devicePixelRatio) + 'px';
-      document.getElementById('gameContainer').style.height = (window.screen.height * window.devicePixelRatio) + 'px';
+      window.onload = function() {
+        document.getElementById('gameContainer').style.width = (window.screen.width * window.devicePixelRatio) + 'px';
+        document.getElementById('gameContainer').style.height = (window.screen.height * window.devicePixelRatio) + 'px';
+      }
     </script>
   </head>
   <body>
