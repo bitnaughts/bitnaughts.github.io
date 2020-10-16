@@ -10,21 +10,15 @@
     <script src="Build/UnityLoader.js"></script>
     <script>
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/bitnaughts.github.io.json", {onProgress: UnityProgress});
-    </script>
-  </head>
-  <body onresize="resize()">
-    <script>
-      function resize() {
-        document.getElementById("gameContainer").style.width = window.outerWidth;
-        document.getElementById("gameContainer").style.height = window.outerHeight;
+      window.onload = function() {
+        document.getElementById('gameContainer').style.width = (window.innerWidth * window.devicePixelRatio) + 'px';
+        document.getElementById('gameContainer').style.height = (window.innerHeight * window.devicePixelRatio) + 'px';
       }
     </script>
+  </head>
+  <body>
     <div class="webgl-content">
       <div id="gameContainer"></div>
-      <div class="footer">
-        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-        <div class="title">BitNaughts</div>
-      </div>
     </div>
   </body>
 </html>
