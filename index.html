@@ -1,24 +1,42 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en-us">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>BitNaughts</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="stylesheet" href="style.css">
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
     <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/bitnaughts.github.io.json", {onProgress: UnityProgress});
-      window.onload = function() {
-        document.getElementById('gameContainer').style.width = (window.innerWidth * window.devicePixelRatio) + 'px';
-        document.getElementById('gameContainer').style.height = (window.innerHeight * window.devicePixelRatio) + 'px';
-      }
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/2.json", {onProgress: UnityProgress});
     </script>
   </head>
-  <body>
+  <body style="background-color: rgba(34, 31, 32)">
     <div class="webgl-content">
-      <div id="gameContainer"></div>
+      <div id="gameContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <a href="https://github.com/bitnaughts"><div class="title" style="color:white; font-family: 'Abstract Slab'; font-weight: normal; font-style: normal;font-size: 36px">BitNaughts</div></a>
+      </div>
+      <ul style="float:right; color:white; font-family: 'Abstract Slab'; font-weight: normal; font-style: normal;font-size: 18px">
+        Coming soon. In the meantime, check out:
+        <li>
+          <a href="https://www.youtube.com/watch?v=kQaZFAu65z4" style="text-decoration: none; color: white">
+            Microsoft Hackathon 2020 HackADuo video submission
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/bitnaughts/bitnaughts.github.io" style="text-decoration: none; color: white">
+            BitNaughts' open-sourced website
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/bitnaughts/bitnaughts.unity" style="text-decoration: none; color: white">
+            BitNaughts' open-sourced Unity 2018.4.18 project
+          </a>
+        </li>
+      </ul>
     </div>
   </body>
 </html>
