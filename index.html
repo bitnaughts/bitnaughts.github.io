@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
-  <body style="background-color: rgba(0, 0, 0)">
+  <body style="background-color: rgba(34, 31, 32)">
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas"></canvas>
       <div id="unity-loading-bar">
@@ -19,16 +19,16 @@
       <div id="unity-footer">
         <!-- <div id="unity-webgl-logo"></div> -->
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title"><a href="https://github.com/bitnaughts"  style="color:white; font-family: 'Abstract Slab'; font-weight: normal; font-style: normal;font-size: 20px">github.com/bitnaughts</a></div></div>
+        <div id="unity-build-title"><a href="https://github.com/bitnaughts"  style="color:white; font-family: 'Abstract Slab'; font-weight: normal; font-style: normal;font-size: 30px">github.com/bitnaughts</a></div></div>
       </div>
     </div>
     <script>
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/01152022-2.loader.js";
+      var loaderUrl = buildUrl + "/01152022.loader.js";
       var config = {
-        dataUrl: buildUrl + "/01152022-2.data.unityweb",
-        frameworkUrl: buildUrl + "/01152022-2.framework.js.unityweb",
-        codeUrl: buildUrl + "/01152022-2.wasm.unityweb",
+        dataUrl: buildUrl + "/01152022.data.unityweb",
+        frameworkUrl: buildUrl + "/01152022.framework.js.unityweb",
+        codeUrl: buildUrl + "/01152022.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "BitNaughts",
         productName: "BitNaughts",
@@ -45,8 +45,8 @@
         container.className = "unity-mobile";
         config.devicePixelRatio = 1;
       } else {
-        canvas.style.width = "1024px";
-        canvas.style.height = "768px";
+        canvas.style.width = "1910px";
+        canvas.style.height = "880px";
       }
       loadingBar.style.display = "block";
 
