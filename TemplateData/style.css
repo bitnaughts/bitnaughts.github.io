@@ -21,7 +21,7 @@ body { padding: 0; margin: 0 }
 #unity-webgl-logo { float:left; width: 204px; height: 38px; background: url('webgl-logo.png') no-repeat center }
 #unity-build-title { float: right; margin-right: 10px; line-height: 50px; font-family: arial; font-size: 18px }
 #unity-fullscreen-button { float: right; width: 50px; height: 50px; background: url('fullscreen-button.png') no-repeat center }
-#nativeInputDialogTitle { color:white; font-family: 'Abstract Slab'; font-weight: normal; font-style: normal;font-size: 30px }
-#nativeInputDialogInput { color:black; font-family: 'Abstract Slab'; font-weight: normal; font-style: normal;font-size: 30px }
-#nativeInputDialogOkBtn { width: 50px; height: 50px; font-size: 30px; }
-#nativeInputDialogCancelBtn { width: 50px; height: 50px; font-size: 30px; }
+#nativeInputDialogTitle { color:white; font-family: 'Abstract Slab'; font-weight: normal; font-style: normal; font-size: 30px; }
+#nativeInputDialogInput { width: 400px; color:black; font-family: 'Abstract Slab'; font-weight: normal; font-style: normal; font-size: 30px }
+#nativeInputDialogOkBtn { width: 200px; height: 50px; font-family: 'Abstract Slab'; font-weight: normal; font-style: normal; font-size: 30px; }
+#nativeInputDialogCancelBtn { width: 200px; height: 50px; font-family: 'Abstract Slab'; font-weight: normal; font-style: normal; font-size: 30px; }
