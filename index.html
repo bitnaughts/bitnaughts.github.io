@@ -24,11 +24,11 @@
     </div>
     <script>
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/08012022.loader.js";
+      var loaderUrl = buildUrl + "/09112022.loader.js";
       var config = {
-        dataUrl: buildUrl + "/08012022.data.unityweb",
-        frameworkUrl: buildUrl + "/08012022.framework.js.unityweb",
-        codeUrl: buildUrl + "/08012022.wasm.unityweb",
+        dataUrl: buildUrl + "/09112022.data.unityweb",
+        frameworkUrl: buildUrl + "/09112022.framework.js.unityweb",
+        codeUrl: buildUrl + "/09112022.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "BitNaughts",
         productName: "BitNaughts",
@@ -43,7 +43,7 @@
 
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         container.className = "unity-mobile";
-        config.devicePixelRatio = 1;
+        config.devicePixelRatio = 1.5;
       } else {
         container.className = "unity-mobile";
         // canvas.style.width = "1910px";
