@@ -101,7 +101,7 @@
 			next()
 
 			Date.prototype.today = function () {
-				return (((this.getMonth() + 1) < 10) ? "0" : "") + (this.getMonth() + 1) + "/" + ((this.getDate() < 10) ? "0" : "") + this.getDate() + "/" + (this.getFullYear());
+				return (((this.getMonth() + 1) < 10) ? "0" : "") + (this.getMonth() + 1) + "/" + ((this.getDate() < 10) ? "0" : "") + this.getDate() + "/" + (this.getFullYear() - 54);
 			}
 
 			// For the time now
